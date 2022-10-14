@@ -20,6 +20,8 @@ def oneplayer():
     guessamount = input("How large do you want the range of numbers to pick be?(Limit is 500): ")
     if int(guessamount) > 500:
         guessamount = 500
+    if int(guessamount) < 0
+        guessamount = 1
 
     answer = randint(int(1), int(guessamount))
     attempts = 5
