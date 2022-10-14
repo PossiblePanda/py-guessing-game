@@ -113,7 +113,7 @@ def reverse():
     attempts = 5
 
     while attempts != 0 and attempts != 6:
-        guess = randint(0, guessamount)
+        guess = randint(0, int(guessamount))
 
         if answer == int(guess):
             attempts = 6
@@ -122,6 +122,13 @@ def reverse():
 
             if int(guess) > int(answer):
                 print ("The AI's guess is lower than " + str(guess))
+            elif answer == int(guess) and attempts != 5:
+                print("The AI won the game, you lose! The answer was " + str(answer))
+                playagain = input("Would you like to play again?(Y/N): ")
+                if playagain == "Y" or playagain == "y":
+                    startgame()
+                else:
+                    exit()
             else:
                 print ("The AI's guess is higher than " + str(guess))
 
