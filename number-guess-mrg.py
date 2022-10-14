@@ -122,7 +122,7 @@ def reverse():
 
             if int(guess) > int(answer):
                 print ("The AI's guess is lower than " + str(guess))
-            elif answer == int(guess) and attempts != 5:
+            elif int(answer) == int(guess):
                 print("The AI won the game, you lose! The answer was " + str(answer))
                 playagain = input("Would you like to play again?(Y/N): ")
                 if playagain == "Y" or playagain == "y":
