@@ -2,7 +2,7 @@ from random import randint
 def startgame(): 
 
     guessamount = input("How large do you want the range of numbers to pick be?(Limit is 500): ")
-        guessamount = 500
+    guessamount = 500
 
     answer = randint(int(1), int(guessamount))
     attempts = 5

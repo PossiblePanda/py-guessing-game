@@ -37,7 +37,3 @@ def twoplayer_switch():
         else:
             exit()
 run_once = 0
-while 1:
-    if run_once == 0:
-        twoplayer_switch()
-        run_once = 1
