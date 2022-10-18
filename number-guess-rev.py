@@ -27,13 +27,13 @@ def reverse():
         print("The AI won the game, you lose! The answer was " + str(answer))
         playagain = input("Would you like to play again?(Y/N): ")
         if playagain == "Y" or playagain == "y":
-            startgame()
+            pass
         else:
             exit()
     else:
         print("The AI ran out of attempts, you win! the number was " + str(answer))
         playagain = input("Would you like to play again?(Y/N): ")
         if playagain == "Y" or playagain == "y":
-            startgame()
+            pass
         else:
             exit()
